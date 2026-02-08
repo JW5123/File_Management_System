@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Management System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <button class="sidebar-toggle" id="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <div class="sidebar" id="sidebar">
+        <h2>檔案管理系統</h2>
+        <ul>
+            <li><a href="" data-page="myfile" class="active"><i class="fas fa-folder"></i> 我的檔案</a></li>
+            <li><a href="" data-page="upload"><i class="fas fa-upload"></i> 上傳檔案</a></li>
+            <li><a href="" data-page="setting"><i class="fas fa-cog"></i> 設定</a></li>
+        </ul>
+    </div>
+    
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    
+    <div class="container" id="main-content"></div>
+    
+    <script type="module" src="/app.js"></script>
+</body>
+</html>
