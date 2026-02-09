@@ -6,6 +6,9 @@
     <title>File Management System</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <button class="sidebar-toggle" id="sidebar-toggle">
@@ -17,6 +20,7 @@
         <ul>
             <li><a href="" data-page="myfile" class="active"><i class="fas fa-folder"></i> 我的檔案</a></li>
             <li><a href="" data-page="upload"><i class="fas fa-upload"></i> 上傳檔案</a></li>
+            <li><a href="" data-page="stats"><i class="fas fa-chart-pie"></i> 檔案統計</a></li>
             <li><a href="" data-page="setting"><i class="fas fa-cog"></i> 設定</a></li>
         </ul>
     </div>
@@ -25,6 +29,6 @@
     
     <div class="container" id="main-content"></div>
     
-    <script type="module" src="/app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

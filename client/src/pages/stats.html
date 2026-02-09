@@ -1,0 +1,40 @@
+<h1>檔案統計</h1>
+
+<div class="stats-overview">
+    <div class="stats-card">
+        <div class="stats-card-icon"><i class="fas fa-file"></i></div>
+        <div class="stats-card-info">
+            <div class="stats-card-value" id="stats-total-files">0</div>
+            <div class="stats-card-label">總檔案數</div>
+        </div>
+    </div>
+    <div class="stats-card">
+        <div class="stats-card-icon"><i class="fas fa-database"></i></div>
+        <div class="stats-card-info">
+            <div class="stats-card-value" id="stats-total-size">0 B</div>
+            <div class="stats-card-label">總檔案大小</div>
+        </div>
+    </div>
+</div>
+
+<div class="charts-container">
+    <div class="chart-box">
+        <h2>檔案類型分布</h2>
+        <div class="chart-wrapper">
+            <canvas id="type-chart"></canvas>
+        </div>
+    </div>
+    <div class="chart-box">
+        <div class="chart-header">
+            <h2>上傳趨勢</h2>
+            <select id="trend-period" class="trend-select">
+                <option value="daily">日</option>
+                <option value="weekly">週</option>
+                <option value="monthly">年</option>
+            </select>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="trend-chart"></canvas>
+        </div>
+    </div>
+</div>

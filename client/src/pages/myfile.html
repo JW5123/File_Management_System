@@ -1,5 +1,39 @@
 <h1>我的檔案</h1>
 
+<div class="search-filter-bar">
+    <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-input" class="search-input" placeholder="搜尋檔案名稱...">
+        <button id="search-clear" class="search-clear" style="display:none;">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="filter-row">
+        <div class="filter-group">
+            <label class="filter-label">類型</label>
+            <select id="filter-type" class="filter-select">
+                <option value="">全部</option>
+                <option value="image">圖片</option>
+                <option value="document">文件</option>
+                <option value="video">影片</option>
+                <option value="audio">音樂</option>
+                <option value="code">程式碼</option>
+                <option value="archive">壓縮檔</option>
+                <option value="other">其他</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label class="filter-label">日期範圍</label>
+            <input type="date" id="filter-date-start" class="filter-date">
+            <span class="filter-date-separator">~</span>
+            <input type="date" id="filter-date-end" class="filter-date">
+        </div>
+        <button id="filter-reset" class="filter-reset-btn">
+            <i class="fas fa-undo"></i> 重置
+        </button>
+    </div>
+</div>
+
 <div class="file-cards-container" id="file-cards-container">
     <div class="loading-message">載入中...</div>
 </div>
